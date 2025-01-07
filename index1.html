@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="head1">sathish</h1>
+    <button id="" onclick="changing()">click me</button>
+    <script>
+      let h1 = document.getElementById("head1");
+      function changing() {
+        h1.innerText = "sonu";
+      }
+    </script>
+
+    <h2 id="head2">sathish</h2>
+    <button onclick="namechange()">click me</button>
+    <script>
+      let h2 = document.getElementById("head2");
+      function namechange() {
+        h2.innerText = "sathi";
+      }
+    </script>
+
+    <p  id="p1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dignissimos
+      ex minus temporibus inventore minima sapiente laudantium sed tenetur, hic
+      officiis dolorum, a impedit ullam natus qui id totam eveniet?
+    </p>
+    <button onclick="colourchange()">click me</button>
+    <script>
+        let p=document.getElementById("p1")
+        function colourchange(){
+            p.style.color="blue";
+            p.style.backgroundColor="red"  
+        }
+    </script>
+
+    <h1>simple counter</h1>
+    <div id = "div1">0</div>
+    <button onclick="increment()">+</button>
+    <button onclick="decrement()">-</button>
+    <script>
+        let count=0;
+        function increment(){
+            count++;
+            updatediv1();
+        }
+        function decrement(){
+            count--;
+            updatediv1();
+        }
+        function updatediv1(){
+            document.getElementById("div1").innerText=count;
+
+        }
+       
+    </script>
+
+      </body>
+</html>
