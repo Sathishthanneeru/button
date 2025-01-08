@@ -6,13 +6,13 @@
     <title>Document</title>
   </head>
   <body>
-    <h1 id="head1">sathish</h1>
-    <button id="" onclick="changing()">click me</button>
+    <h1 class="head1">sathish</h1>
+    <button onclick="changing()">click me</button>
     <script>
-      let h1 = document.getElementById("head1");
+      let h1 = document.getElementsByClassName("head1");
       function changing() {
         h1.innerText = "sonu";
-      }
+      } 
     </script>
 
     <h2 id="head2">sathish</h2>
@@ -57,7 +57,20 @@
 
         }
        
-    </script>
+    </script> 
 
-      </body>
+    <button onclick="addDiv()">click me</button>
+    <script>
+      function addDiv() {
+        let div1 = document.createElement("div");
+        div1.style.height = "120px";
+        div1.style.width = "120px";
+        div1.style.border = "2px solid black";
+        div1.style.backgroundColor = "red";
+       document.body.append(div1,"dsvbdhvbdsvb","cgdavcavckjaavn")
+        // document.body.appendChild(div1)
+    
+    }
+    </script>
+  </body>
 </html>
